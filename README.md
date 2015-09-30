@@ -9,5 +9,6 @@ This application has been tested in jetty.(Class files not included in the repos
 
 It takes a single type of request which is an image url and sends the url to faceplusplus server for recognition. Then it receives the results from faceplusplus server and constructs a toned down version of those results in json. This was for a class project and the toned down version of json was more convenient for the collaborating teams than the original json response of the faceplusplus server.
 
+Note: The faceplusplus API key and key secret are hardcoded in Line 38 of FaceRecognition.java in onsap package. The group name to compare the picture against is hardcoded in line 41 of the same file. (like: serverParams.setGroupName("cricketers");) 
 
 
